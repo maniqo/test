@@ -1,7 +1,16 @@
 name: Workflow Check
 on:
-  workflow_run:
-    workflows: ["Manual deployment workflow"]
+  workflow_dispatch:
+    inputs:
+      GIT_COMMIT_TO_PROMOTE:
+        description: 'Git commit SHA to promote'
+        required: false
+      ENV_TO_PROMOTE_TO:
+        description: 'Environment to promote to'
+        required: false
+      CCB_TICKET_NUMBER:
+        description: 'CCB ticket number (for a production release)'
+        required: false
 env:
   TEST_PLAN_KEY: "SX-1"
   PROJECT_KEY: "SX"
