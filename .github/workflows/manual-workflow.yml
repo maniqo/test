@@ -1,0 +1,27 @@
+name: Workflow Check
+on:
+  workflow_run:
+    workflows: ["Manual deployment workflow"]
+env:
+  TEST_PLAN_KEY: "SX-1"
+  PROJECT_KEY: "SX"
+  TEST_EXECUTION_KEY: "SX-2"
+  WORKSPACE: ${{ github.workspace }}
+
+jobs:
+  manual-deploy:
+    runs-on: [self-hosted, Standard]
+    name: XRay Tests and Email confirmation
+    steps:
+      - name: Import results to Xray
+        uses: mikepenz/xray-action@4980975100b1cbc495c005ed427db98dd9d0332f
+        with:
+          username: ${{ secrets.ITI_JIRA_USER}}
+          password: ${{ secrets.ITI_JIRA_PASSWORD}}
+          testFormat: "junit"
+          testPaths: "*.xml"
+          testExecKey: ${{env.TEST_EXECUTION_KEY}}
+          testPlanKey: ${{env.TEST_PLAN_KEY}}
+          testMerge: false
+          projectKey: ${{env.PROJECT_KEY}}
+          failOnImportError: true
