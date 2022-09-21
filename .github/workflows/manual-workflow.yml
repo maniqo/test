@@ -16,8 +16,8 @@ jobs:
       - name: Import results to Xray
         uses: mikepenz/xray-action@4980975100b1cbc495c005ed427db98dd9d0332f
         with:
-          username: ${{ secrets.ITI_JIRA_USER}}
-          password: ${{ secrets.ITI_JIRA_PASSWORD}}
+          username: ${{ secrets.SX_JIRA_USER}}
+          password: ${{ secrets.SX_JIRA_PASSWORD}}
           testFormat: "junit"
           testPaths: "*.xml"
           testExecKey: ${{env.TEST_EXECUTION_KEY}}
