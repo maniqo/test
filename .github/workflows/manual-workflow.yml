@@ -8,9 +8,6 @@ on:
       ENV_TO_PROMOTE_TO:
         description: 'Environment to promote to'
         required: false
-      CCB_TICKET_NUMBER:
-        description: 'CCB ticket number (for a production release)'
-        required: false
 env:
   TEST_PLAN_KEY: "SX-1"
   PROJECT_KEY: "SX"
@@ -20,7 +17,7 @@ env:
 jobs:
   manual-deploy:
     runs-on: [self-hosted, Standard]
-    name: XRay Tests and Email confirmation
+    name: XRay Tests
     steps:
       - name: Import results to Xray
         uses: mikepenz/xray-action@4980975100b1cbc495c005ed427db98dd9d0332f
