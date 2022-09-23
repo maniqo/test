@@ -18,5 +18,3 @@ jobs:
   manual-deploy:
     runs-on: [self-hosted, Standard]
     name: XRay Tests
-    steps:
-      - name: Import results to Xray
