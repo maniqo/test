@@ -8,13 +8,9 @@ on:
       ENV_TO_PROMOTE_TO:
         description: 'Environment to promote to'
         required: false
-env:
-  TEST_PLAN_KEY: "SX-1"
-  PROJECT_KEY: "SX"
-  TEST_EXECUTION_KEY: "SX-2"
-  WORKSPACE: ${{ github.workspace }}
-
 jobs:
-  manual-deploy:
+  cypress-tests:
     runs-on: [self-hosted, Standard]
-    name: XRay Tests
+    steps:
+      - name: Display Day of Week
+        run: echo $DAY_OF_WEEK
