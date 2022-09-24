@@ -10,7 +10,7 @@ on:
         required: false
 jobs:
   cypress-tests:
-    runs-on: [self-hosted, Standard]
+    runs-on: [ubuntu-latest, Standard]
     steps:
       - name: Display Day of Week
         run: echo $DAY_OF_WEEK
