@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Import results to Xray
-        uses: mikepenz/xray-action@v07bcd51904dc36926c3659ba9021dfd51e092055
+        uses: mikepenz/xray-action@07bcd51904dc36926c3659ba9021dfd51e092055
         with:
           username: ${{ secrets.SX_JIRA_USER}}
           password: ${{ secrets.SX_JIRA_PASSWORD}}
