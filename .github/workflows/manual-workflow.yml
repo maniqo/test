@@ -1,16 +1,10 @@
 name: Workflow Check
-on:
-  workflow_dispatch:
-    inputs:
-      GIT_COMMIT_TO_PROMOTE:
-        description: 'Git commit SHA to promote'
-        required: false
-      ENV_TO_PROMOTE_TO:
-        description: 'Environment to promote to'
-        required: false
+
+on: [push]
+  
 jobs:
-  cypress-tests:
-    runs-on: [ubuntu-latest, Standard]
+  test-workflow:
+    runs-on: ubuntu-latest
     steps:
       - name: Display Day of Week
         run: echo $DAY_OF_WEEK
