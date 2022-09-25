@@ -6,15 +6,13 @@ jobs:
   test-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Display Day of Week
-        run: echo $DAY_OF_WEEK
       - name: Import results to Xray
-        uses: mikepenz/xray-action@4980975100b1cbc495c005ed427db98dd9d0332f
+        uses: mikepenz/xray-action@{latest-release}
         with:
           username: ${{ secrets.SX_JIRA_USER}}
           password: ${{ secrets.SX_JIRA_PASSWORD}}
           testFormat: "junit"
-          testPaths: "*.xml"
+          testPaths: "**/*.xml"
           testExecKey: "SX-19"
           testPlanKey: "SX-18"
           testMerge: false
