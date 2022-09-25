@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="127.1550" tests="23" failures="0" skipped="14">
+  <testsuite name="Root Suite" timestamp="2022-09-25T14:05:31" tests="0" file="cypress/e2e/sanity/e2e.spec.ts" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Functional Testing - " timestamp="2022-09-25T14:05:31" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Chrome" timestamp="2022-09-25T14:05:33" tests="1" time="30.8300" failures="0">
+    <testcase name="Functional Testing -  Chrome Header" time="30.8300" classname="Header">
+    </testcase>
+  </testsuite>
+  <testsuite name="Diff File in AWS S3" timestamp="2022-09-25T14:06:03" tests="1" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="History - Filtering, Paging and Sorting" timestamp="2022-09-25T14:06:03" tests="7" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Upload and Categorize" timestamp="2022-09-25T14:06:03" tests="6" time="75.2460" failures="0">
+    <testcase name="Functional Testing -  Upload and Categorize Create a new Job" time="0.4870" classname="Create a new Job">
+    </testcase>
+    <testcase name="Functional Testing -  Upload and Categorize Job Step 1" time="19.7590" classname="Job Step 1">
+    </testcase>
+    <testcase name="Functional Testing -  Upload and Categorize Job Step 2" time="14.8270" classname="Job Step 2">
+    </testcase>
+    <testcase name="Functional Testing -  Upload and Categorize Job Step 3" time="15.1530" classname="Job Step 3">
+    </testcase>
+    <testcase name="Functional Testing -  Upload and Categorize Job Step 4" time="18.5420" classname="Job Step 4">
+    </testcase>
+    <testcase name="Functional Testing -  Upload and Categorize Return to Jobs History" time="6.4780" classname="Return to Jobs History">
+    </testcase>
+  </testsuite>
+  <testsuite name="Unique Job Name" timestamp="2022-09-25T14:07:19" tests="1" time="9.7820" failures="0">
+    <testcase name="Functional Testing -  Unique Job Name Unique Job Name" time="9.7820" classname="Unique Job Name">
+    </testcase>
+  </testsuite>
+  <testsuite name="Virus Scanning" timestamp="2022-09-25T14:07:29" tests="1" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Cancelling Job" timestamp="2022-09-25T14:07:29" tests="4" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Error Handling" timestamp="2022-09-25T14:07:29" tests="1" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Log Out" timestamp="2022-09-25T14:07:29" tests="1" time="11.2970" failures="0">
+    <testcase name="Functional Testing -  Log Out Log Out" time="11.2970" classname="Log Out">
+    </testcase>
+  </testsuite>
+</testsuites>
