@@ -15,8 +15,8 @@ jobs:
           password: ${{ secrets.SX_JIRA_PASSWORD}}
           testFormat: "junit"
           testPaths: "/*.xml"
-          testExecKey: "SX-2"
-          testPlanKey: "SX-1"
+          testExecKey: "SX-7"
+          testPlanKey: "SX-6"
           testMerge: false
           projectKey: "SX"
           failOnImportError: true
