@@ -12,7 +12,7 @@ jobs:
           username: ${{ secrets.SX_JIRA_USER}}
           password: ${{ secrets.SX_JIRA_PASSWORD}}
           testFormat: "junit"
-          testPaths: "**/*.xml"
+          testPaths: "result.xml"
           testExecKey: "SX-19"
           testPlanKey: "SX-18"
           testMerge: false
